@@ -34,3 +34,23 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
 end
+
+group :development do
+  gem 'pry'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'fakeweb'
+  gem 'vcr'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'simplecov', :require => false
+  gem 'rb-fsevent'
+  gem 'fakeweb'
+  gem 'vcr'
+end
